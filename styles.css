@@ -1,0 +1,76 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, system-ui, sans-serif;
+  background: #f8fafb;
+  color: #1f2937;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #f8fafb;
+}
+
+.nav-link {
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #0f5132 !important;
+}
+
+.card-custom {
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+  background: #ffffff;
+}
+
+.team-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.team-list li {
+  border: 1px solid #d1d5db;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: #ffffff;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.team-list li:hover {
+  transform: translateY(-3px);
+  border-color: #a7f3d0;
+}
+
+.chat-box {
+  background: #f8fafb;
+}
+
+.chat-message {
+  background: #eff6ff;
+  border-radius: 0.75rem;
+  padding: 1rem;
+}
+
+.chat-message.user {
+  background: #e2f7e1;
+}
+
+button.btn-success {
+  border-radius: 0.75rem;
+}
+
+footer {
+  background: #ffffff;
+}
+
+@media (max-width: 767px) {
+  .container-fluid {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

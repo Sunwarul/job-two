@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blooming Oasis | Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="bg-white border-bottom shadow-sm">
+    <div class="container py-3 d-flex flex-wrap align-items-center justify-content-between">
+      <a class="navbar-brand text-dark fs-4 fw-bold" href="index.html">Blooming Oasis</a>
+      <nav class="nav gap-3">
+        <a class="nav-link text-dark" href="index.html">Home</a>
+        <a class="nav-link text-dark" href="product.html">Product</a>
+        <a class="nav-link text-dark" href="about.html">About</a>
+        <a class="nav-link text-dark" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container py-5">
+    <section class="row align-items-center gy-5">
+      <div class="col-lg-6">
+        <p class="text-uppercase text-success mb-2 fw-semibold">Plant Matchmaker</p>
+        <h1 class="display-6 fw-bold">Find your perfect indoor companion.</h1>
+        <p class="lead">Answer a few simple preferences and discover a houseplant that fits your light, care style, and pet-friendly needs.</p>
+
+        <div class="card card-custom p-4">
+          <form id="quiz-form">
+            <div class="mb-3">
+              <label class="form-label">Sunlight level</label>
+              <select class="form-select" id="sunlight" required>
+                <option value="">Choose one</option>
+                <option value="bright">Bright indirect</option>
+                <option value="moderate">Moderate</option>
+                <option value="low">Low</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Care commitment</label>
+              <select class="form-select" id="care" required>
+                <option value="">Choose one</option>
+                <option value="easy">Easy</option>
+                <option value="moderate">Moderate</option>
+                <option value="frequent">Frequent attention</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Pet friendly</label>
+              <select class="form-select" id="pet" required>
+                <option value="">Choose one</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-success w-100">Recommend a plant</button>
+          </form>
+          <div id="quiz-result" class="mt-4 d-none"></div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="row g-3">
+          <div class="col-6">
+            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80" alt="Houseplant collage" class="img-fluid rounded" />
+          </div>
+          <div class="col-6">
+            <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=600&q=80" alt="Plant styling" class="img-fluid rounded" />
+          </div>
+          <div class="col-12">
+            <img src="https://images.unsplash.com/photo-1524594154903-37db4a31f6bf?auto=format&fit=crop&w=1200&q=80" alt="Indoor garden" class="img-fluid rounded" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card card-custom h-100">
+            <div class="card-body">
+              <h2 class="h5">Popular Houseplants</h2>
+              <p class="text-muted">Fiddle leaf figs, peace lilies, pothos, and snake plants curated for reliable indoor growth.</p>
+              <ul class="list-unstyled mb-0">
+                <li>Golden pothos</li>
+                <li>Snake plant</li>
+                <li>Swiss cheese plant</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-custom h-100">
+            <div class="card-body">
+              <h2 class="h5">Curated Collections</h2>
+              <p class="text-muted">Themed sets for low-light apartments, pet-safe rooms, and beginners who want instant greenery.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-custom h-100">
+            <div class="card-body">
+              <h2 class="h5">Plant Care Guides</h2>
+              <p class="text-muted">Watering schedules, lighting tips, repotting notes, and easy maintenance steps for every plant.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="row align-items-center bg-light rounded-4 p-4">
+      <div class="col-md-6">
+        <h2 class="h4 fw-bold">About Blooming Oasis</h2>
+        <p>We help people discover plants that suit their home, lifestyle, and pets. Our simple toolkit is made to connect you with a happy indoor garden.</p>
+        <a href="about.html" class="btn btn-outline-success">Learn more</a>
+      </div>
+      <div class="col-md-6">
+        <p class="mb-1 text-uppercase text-secondary small">To support your growth</p>
+        <div class="d-flex gap-3 flex-wrap">
+          <span class="badge bg-success">Flexible care</span>
+          <span class="badge bg-success">Pet-aware picks</span>
+          <span class="badge bg-success">Eco-friendly sourcing</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-white border-top py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <p class="mb-0 text-muted">&copy; 2026 Blooming Oasis</p>
+      <p class="mb-0 text-muted">Current date & time: <span id="current-time">Loading...</span></p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

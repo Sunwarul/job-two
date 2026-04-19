@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blooming Oasis | Monstera Product</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="bg-white border-bottom shadow-sm">
+    <div class="container py-3 d-flex flex-wrap align-items-center justify-content-between">
+      <a class="navbar-brand text-dark fs-4 fw-bold" href="index.html">Blooming Oasis</a>
+      <nav class="nav gap-3">
+        <a class="nav-link text-dark" href="index.html">Home</a>
+        <a class="nav-link active" href="product.html">Product</a>
+        <a class="nav-link text-dark" href="about.html">About</a>
+        <a class="nav-link text-dark" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container py-5">
+    <div class="row gy-5">
+      <div class="col-lg-6">
+        <img src="https://images.unsplash.com/photo-1519741490161-9a1eac0a7b7f?auto=format&fit=crop&w=1200&q=80" alt="Monstera plant" class="img-fluid rounded" />
+      </div>
+      <div class="col-lg-6">
+        <p class="text-uppercase text-success mb-2 fw-semibold">Featured Plant</p>
+        <h1 class="display-6 fw-bold">Monstera Deliciosa</h1>
+        <p class="lead">A bold, architectural plant with large split leaves that brings drama to any room.</p>
+
+        <ul class="list-unstyled mb-4">
+          <li><strong>Light:</strong> Bright indirect light</li>
+          <li><strong>Water:</strong> Weekly, allow topsoil to dry</li>
+          <li><strong>Toxicity:</strong> Toxic to pets if ingested</li>
+          <li><strong>Repotting:</strong> Every 18 months for healthy growth</li>
+        </ul>
+
+        <div class="card card-custom p-4 mb-4">
+          <h2 class="h6">Plant Parent Tips</h2>
+          <p class="mb-2">Keep Monstera near a north or east-facing window and mist its leaves when the air is dry.</p>
+          <p class="mb-0">Support the stem with a moss pole for upright growth and prune gently once a year.</p>
+        </div>
+
+        <div class="card card-custom p-4 mb-4">
+          <form id="cart-form">
+            <div class="mb-3">
+              <label class="form-label">Plant size</label>
+              <select class="form-select" id="size" required>
+                <option value="">Select size</option>
+                <option value="Small">Small (35 cm)</option>
+                <option value="Medium">Medium (60 cm)</option>
+                <option value="Large">Large (90 cm)</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Choose pot</label>
+              <select class="form-select" id="pot" required>
+                <option value="">Select pot</option>
+                <option value="Terra Cotta">Terra Cotta</option>
+                <option value="Matte White">Matte White</option>
+                <option value="Charcoal">Charcoal</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Add stand</label>
+              <select class="form-select" id="stand" required>
+                <option value="">Select stand</option>
+                <option value="No">No stand</option>
+                <option value="Wooden">Wooden stand</option>
+                <option value="Black iron">Black iron stand</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-success w-100">Add to cart</button>
+          </form>
+          <div id="cart-summary" class="mt-4 d-none"></div>
+        </div>
+      </div>
+    </div>
+
+    <section class="py-5">
+      <h2 class="h4 fw-bold mb-3">Monstera Growth & Care Routine</h2>
+      <div class="ratio ratio-16x9 rounded overflow-hidden">
+        <iframe src="https://www.youtube.com/embed/6c2G0DlYOfQ" title="Monstera care video" allowfullscreen></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-white border-top py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <p class="mb-0 text-muted">&copy; 2026 Blooming Oasis</p>
+      <p class="mb-0 text-muted">Current date & time: <span id="current-time">Loading...</span></p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

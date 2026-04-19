@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Monstera Deliciosa | Blooming Oasis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="updateDateTime()">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Blooming Oasis</a>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="product.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="ratio ratio-16x9 bg-light border d-flex align-items-center justify-content-center">
+                    <span>[Monstera Growth Video Placeholder]</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h1>Monstera Deliciosa</h1>
+                <ul class="list-group list-group-flush mb-3">
+                    <li class="list-group-item"><strong>Size:</strong> Large (3-5ft)</li>
+                    <li class="list-group-item"><strong>Light:</strong> Bright, indirect</li>
+                    <li class="list-group-item"><strong>Water:</strong> Every 1-2 weeks</li>
+                    <li class="list-group-item text-danger"><strong>Toxicity:</strong> Toxic to pets</li>
+                    <li class="list-group-item"><strong>Repotting:</strong> Every 2 years</li>
+                </ul>
+                <div class="mb-3">
+                    <label class="form-label">Add-ons:</label>
+                    <select class="form-select mb-2"><option>Ceramic Pot (+$15)</option><option>Wood Stand (+$20)</option></select>
+                    <button class="btn btn-success w-100">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-5">
+            <h3>Plant Parent Tips</h3>
+            <div class="border p-3 rounded">
+                <p>"Wipe the leaves with a damp cloth to keep them shiny!" - <em>User402</em></p>
+                <textarea class="form-control" placeholder="Share your tip..."></textarea>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3"><p id="date-time"></p></footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+/* Navigation Hover Effect */
+.navbar-nav .nav-link {
+    transition: color 0.3s ease;
+}
+.navbar-nav .nav-link:hover {
+    color: #198754 !important; /* Green shade */
+    text-decoration: underline;
+}
+
+/* Custom Unordered List (Requirement #5) */
+.team-list {
+    list-style: none;
+    padding: 0;
+}
+.team-list li {
+    background-color: #f8f9fa;
+    border: 2px solid #198754;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 10px;
+    transition: background-color 0.4s;
+    display: inline-block;
+    width: 100%;
+}
+/* Manual Hover Effect without framework help */
+.team-list li:hover {
+    background-color: #e2e3e5;
+}
+
+/* Minimalist adjustments */
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+.hero-section { background: #e9ecef; padding: 60px 0; }
