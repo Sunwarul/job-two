@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blooming Oasis | Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container-fluid px-4 py-3">
+      <a class="navbar-brand fw-bold" href="index.html">Blooming Oasis</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-3">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="product.html">Product</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    <div class="hero-panel rounded-4 p-5 mb-5">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <p class="eyebrow">Plant Matchmaker</p>
+          <h1 class="display-5">Discover the plant built for your lifestyle.</h1>
+          <p class="lead">Answer three simple questions to find a houseplant that fits your light, care, and pet needs.</p>
+        </div>
+        <div class="col-lg-5 text-lg-end mt-4 mt-lg-0">
+          <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=500&q=80" alt="Plant styled" class="img-fluid rounded shadow" />
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-4 mb-5">
+      <div class="col-lg-5">
+        <div class="card p-4 rounded-4 quiz-panel">
+          <form id="quiz-form">
+            <div class="mb-3">
+              <label class="form-label">Sunlight</label>
+              <select class="form-select" id="sunlight" required>
+                <option value="">Choose one</option>
+                <option value="bright">Bright indirect</option>
+                <option value="moderate">Moderate</option>
+                <option value="low">Low</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Care level</label>
+              <select class="form-select" id="care" required>
+                <option value="">Choose one</option>
+                <option value="easy">Easy</option>
+                <option value="moderate">Moderate</option>
+                <option value="frequent">Frequent attention</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Pet-friendly</label>
+              <select class="form-select" id="pet" required>
+                <option value="">Choose one</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+            <button class="btn btn-success w-100">Find plant</button>
+          </form>
+          <div id="quiz-result" class="mt-4 d-none"></div>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="row g-3">
+          <div class="col-6"><img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=500&q=80" alt="Indoor plant" class="img-fluid rounded" /></div>
+          <div class="col-6"><img src="https://images.unsplash.com/photo-1493666438817-866a91353ca9?auto=format&fit=crop&w=500&q=80" alt="Plant corner" class="img-fluid rounded" /></div>
+          <div class="col-12"><img src="https://images.unsplash.com/photo-1524594154903-37db4a31f6bf?auto=format&fit=crop&w=1200&q=80" alt="Plant display" class="img-fluid rounded" /></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-4 mb-5">
+      <div class="col-md-4"><div class="info-card p-4 rounded-4"><h3>Popular Houseplants</h3><p>Careful selections for every apartment and sunlight level.</p></div></div>
+      <div class="col-md-4"><div class="info-card p-4 rounded-4"><h3>Curated Collections</h3><p>Themed plant sets crafted for style and easy care.</p></div></div>
+      <div class="col-md-4"><div class="info-card p-4 rounded-4"><h3>Plant Care Guides</h3><p>Clear tips on watering, light, and repotting for every plant.</p></div></div>
+    </div>
+
+    <div class="features-panel p-4 rounded-4">
+      <div class="row align-items-center">
+        <div class="col-md-8">
+          <h2>Simple plant care, thoughtful design.</h2>
+          <p>Our goal is to make indoor gardening approachable, calm, and rewarding.</p>
+        </div>
+        <div class="col-md-4 text-md-end mt-3 mt-md-0"><a class="btn btn-outline-success" href="about.html">Learn more</a></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-white border-top py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <p class="mb-0 text-muted">&copy; 2026 Blooming Oasis</p>
+      <p class="mb-0 text-muted">Current date & time: <span id="current-time">Loading...</span></p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

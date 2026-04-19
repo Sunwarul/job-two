@@ -1,0 +1,93 @@
+:root {
+  font-family: Inter, system-ui, sans-serif;
+  background: #0b1812;
+  color: #e9f3ea;
+}
+
+body {
+  margin: 0;
+  background: #0b1812;
+}
+
+.hero-banner {
+  background: linear-gradient(180deg, rgba(15, 42, 32, 0.95), rgba(15, 42, 32, 0.9)), url('https://images.unsplash.com/photo-1516715094486-115bc48736ed?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+}
+
+.hero-copy {
+  max-width: 42rem;
+}
+
+.eyebrow {
+  color: #9fdec0;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #d8f7dd !important;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #7fe2a8 !important;
+}
+
+.dark-card {
+  background: rgba(15, 34, 29, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.feature-box,
+.white-card,
+.about-box,
+.about-card,
+.contact-box,
+.product-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.spec-list,
+.team-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.spec-list li,
+.team-list li {
+  padding: 0.85rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 0.95rem;
+  margin-bottom: 0.75rem;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.footer-dark {
+  background: #07110b;
+}
+
+.chat-card,
+.tips-box {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+}
+
+.chat-card.user {
+  background: rgba(127, 226, 168, 0.12);
+}
+
+button.btn-success {
+  border-radius: 0.75rem;
+}
+
+a {
+  color: #a5f5b5;
+}
+
+a:hover {
+  color: #7fe2a8;
+}

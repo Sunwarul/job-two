@@ -1,0 +1,73 @@
+:root {
+  font-family: Inter, system-ui, sans-serif;
+  color: #153f2e;
+  background: #f3f8f1;
+}
+
+body {
+  margin: 0;
+  background: #f3f8f1;
+}
+
+.eyebrow {
+  font-size: 0.85rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #2f6f4e;
+  margin-bottom: 0.75rem;
+}
+
+.navbar-nav .nav-link {
+  color: #345a45 !important;
+  transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #1f4d34 !important;
+}
+
+.matchmaker-card,
+.feature-card,
+.info-card,
+.live-chat,
+.card {
+  border: 1px solid #dce7de;
+  border-radius: 1.5rem;
+  background: #ffffff;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-list li {
+  border: 1px solid #d2e4d5;
+  border-radius: 1rem;
+  padding: 0.85rem 1rem;
+  margin-bottom: 0.75rem;
+  background: #f9fdf7;
+}
+
+.live-chat {
+  background: #f7fbf6;
+}
+
+.chat-card {
+  background: #eef6ed;
+  border-radius: 1rem;
+}
+
+.chat-card.user {
+  background: #dff7d9;
+}
+
+footer {
+  background: #ffffff;
+}
+
+button.btn-success {
+  border-radius: 0.85rem;
+}

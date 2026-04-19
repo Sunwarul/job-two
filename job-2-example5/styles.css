@@ -1,0 +1,88 @@
+:root {
+  font-family: Inter, system-ui, sans-serif;
+  background: #f7f7f7;
+  color: #1f2937;
+}
+
+body {
+  margin: 0;
+  background: #f7f7f7;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #475569 !important;
+  transition: color 0.2s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+  color: #16a34a !important;
+}
+
+.hero-panel {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 1.5rem;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.78rem;
+  color: #16a34a;
+}
+
+.quiz-panel,
+.info-card,
+.features-panel,
+.about-panel,
+.about-card,
+.contact-panel,
+.card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+}
+
+.product-specs,
+.team-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.product-specs li,
+.team-list li {
+  padding: 0.9rem 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.tip-note {
+  border: 1px dashed #d1fae5;
+}
+
+.chat-row {
+  background: #f1f5f9;
+  border-radius: 1rem;
+}
+
+.chat-row.user {
+  background: #d6f5e0;
+}
+
+footer {
+  background: #ffffff;
+}
+
+a {
+  color: #16a34a;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button.btn-success {
+  border-radius: 0.85rem;
+}
