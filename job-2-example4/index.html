@@ -8,9 +8,9 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="hero-banner text-white">
+  <header class="hero-banner">
     <div class="container py-5">
-      <nav class="navbar navbar-expand-lg navbar-dark">
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
         <a class="navbar-brand" href="index.html">Blooming Oasis</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -39,7 +39,7 @@
         <div class="card dark-card p-4">
           <form id="quiz-form">
             <div class="mb-3">
-              <label class="form-label text-white">Sunlight</label>
+              <label class="form-label">Sunlight</label>
               <select class="form-select" id="sunlight" required>
                 <option value="">Choose one</option>
                 <option value="bright">Bright indirect</option>
@@ -48,7 +48,7 @@
               </select>
             </div>
             <div class="mb-3">
-              <label class="form-label text-white">Care level</label>
+              <label class="form-label">Care level</label>
               <select class="form-select" id="care" required>
                 <option value="">Choose one</option>
                 <option value="easy">Easy</option>
@@ -57,14 +57,14 @@
               </select>
             </div>
             <div class="mb-3">
-              <label class="form-label text-white">Pet-friendly</label>
+              <label class="form-label">Pet-friendly</label>
               <select class="form-select" id="pet" required>
                 <option value="">Choose one</option>
                 <option value="yes">Yes</option>
                 <option value="no">No</option>
               </select>
             </div>
-            <button class="btn btn-outline-light w-100">Reveal my plant</button>
+            <button class="btn btn-outline-success w-100">Reveal my plant</button>
           </form>
           <div id="quiz-result" class="mt-4 d-none"></div>
         </div>
@@ -92,7 +92,7 @@
   </main>
 
   <footer class="footer-dark py-4">
-    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 text-white">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
       <p class="mb-0">&copy; 2026 Blooming Oasis</p>
       <p class="mb-0">Current date & time: <span id="current-time">Loading...</span></p>
     </div>

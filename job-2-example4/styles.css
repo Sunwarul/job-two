@@ -1,16 +1,26 @@
 :root {
   font-family: Inter, system-ui, sans-serif;
-  background: #0b1812;
-  color: #e9f3ea;
+  background: #f7fafc;
+  color: #102a43;
 }
 
 body {
   margin: 0;
-  background: #0b1812;
+  background: #f7fafc;
 }
 
 .hero-banner {
-  background: linear-gradient(180deg, rgba(15, 42, 32, 0.95), rgba(15, 42, 32, 0.9)), url('https://images.unsplash.com/photo-1516715094486-115bc48736ed?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+  background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(255,255,255,0.95)), url('https://images.unsplash.com/photo-1516715094486-115bc48736ed?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+  color: #102a43;
+}
+
+.hero-banner .navbar-nav .nav-link {
+  color: #102a43 !important;
+}
+
+.hero-banner .navbar-nav .nav-link:hover,
+.hero-banner .navbar-nav .nav-link.active {
+  color: #147d64 !important;
 }
 
 .hero-copy {
@@ -18,35 +28,26 @@ body {
 }
 
 .eyebrow {
-  color: #9fdec0;
+  color: #147d64;
   text-transform: uppercase;
   letter-spacing: 0.18em;
   font-size: 0.85rem;
   margin-bottom: 1rem;
 }
 
-.navbar-dark .navbar-nav .nav-link {
-  color: #d8f7dd !important;
-}
-
-.navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .nav-link.active {
-  color: #7fe2a8 !important;
-}
-
-.dark-card {
-  background: rgba(15, 34, 29, 0.95);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-}
-
+.dark-card,
 .feature-box,
 .white-card,
 .about-box,
 .about-card,
 .contact-box,
-.product-card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+.product-card,
+.quiz-panel,
+.about-panel,
+.contact-panel {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.05);
 }
 
 .spec-list,
@@ -59,25 +60,30 @@ body {
 .spec-list li,
 .team-list li {
   padding: 0.85rem 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid #e2e8f0;
   border-radius: 0.95rem;
   margin-bottom: 0.75rem;
-  background: rgba(255, 255, 255, 0.04);
+  background: #f8fafc;
 }
 
 .footer-dark {
-  background: #07110b;
+  background: #ffffff;
+  color: #475569;
+}
+
+.footer-dark p {
+  color: #475569;
 }
 
 .chat-card,
 .tips-box {
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
   border-radius: 1rem;
 }
 
 .chat-card.user {
-  background: rgba(127, 226, 168, 0.12);
+  background: #dcfce7;
 }
 
 button.btn-success {
@@ -85,9 +91,9 @@ button.btn-success {
 }
 
 a {
-  color: #a5f5b5;
+  color: #147d64;
 }
 
 a:hover {
-  color: #7fe2a8;
+  color: #0f5132;
 }
